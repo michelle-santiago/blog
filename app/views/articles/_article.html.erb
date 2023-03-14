@@ -1,2 +1,6 @@
-<p><%= article.name %></p><br/>
-<p><%= article.body %></p>
+<%= render "navs"%>
+<div class="px-20 py-20 flex flex-col justify-center items-center">
+    <p class="pb-5 text-xl text-amber-400 font-bold"><%= article.name %></p>
+    <p class="pb-5 text-sm font-bold"><%= article.created_at.strftime('%B %d, %Y') %></p>
+    <p class= "indent-8 text-justify"><%= article.body %></p>
+</div>
