@@ -12,8 +12,13 @@
   </head>
 
   <body>
-    <main class="container mx-auto">
+    <main class="h-screen flex flex-col">
+      <div class='w-full'>
+       <%= render 'html_navbar'%>
+      </div>
       <%= yield %>
+</h1>
     </main>
+    
   </body>
 </html>
