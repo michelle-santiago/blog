@@ -1,0 +1,13 @@
+<div class="px-5 py-5">
+
+    <table class="w-full">
+     <% @articles.each do |article| %>
+        <tr>
+            <tbody>
+                <td><%= article.name %></td>
+                <td><%= article.created_at.strftime('%B %d, %Y')%></td>
+            </tbody>
+        </tr>
+    <% end %>
+    </table>
+</div>
